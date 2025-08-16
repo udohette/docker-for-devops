@@ -1,7 +1,7 @@
 # Dockerfile2 
 
-ARG BASE_MAGE
-FROM ${BASE_MAGE}
+ARG BASE_IMAGE
+FROM ${BASE_IMAGE}
 
 WORKDIR /app
 
