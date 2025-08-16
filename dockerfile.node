@@ -1,0 +1,17 @@
+# Dockerfile2 
+
+ARG BASE_MAGE
+FROM ${BASE_MAGE}
+
+WORKDIR /app
+
+# accept dynamic argument
+ARG APP_NAME
+ENV APP_NAME=${APP_NAME}
+
+# Set environmental variables
+ENV  ENVIRONMENT=development
+
+COPY . .
+
+CMD [ "node", "app.js" ]
