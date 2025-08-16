@@ -10,7 +10,7 @@ services:
         - APP_VERSION=2.0
     environment:
       - DEBUG=true    
-    image: anshudevops/python_web:1.0
+    image: anshudevops/python_web:2.0
 
   node_service:
     build:
@@ -21,7 +21,7 @@ services:
         - APP_NAME=nodejs-app
     environment:
        - NODE_ENV=development
-    image: anshudevops/node_web:1.0       
+    image: anshudevops/node_web:2.0    
 
 
 
